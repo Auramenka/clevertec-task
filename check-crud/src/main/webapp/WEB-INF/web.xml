@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>org.clevertec.checkcrud.servlets.ProductServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DiscountCardServlet</servlet-name>
+        <servlet-class>org.clevertec.checkcrud.servlets.DiscountCardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DiscountCardServlet</servlet-name>
+        <url-pattern>/discountcards</url-pattern>
+    </servlet-mapping>
+</web-app>
